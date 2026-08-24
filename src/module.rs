@@ -13,7 +13,7 @@ pub struct Movie {
 
     }
 
-#derive(Clone, Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct TdmbResponse {
     pub page: i32,
     pub results: Vec<Movie>,
@@ -21,7 +21,7 @@ pub struct TdmbResponse {
 
     }
 
-#derive(Clone, Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct Video {
     pub id: String,
     pub key: String,
@@ -32,14 +32,14 @@ pub struct Video {
 
     }
 
-#derive(Clone, Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, Serialize, Deserialize)]
 pub struct VideoResponse {
     pub id: i32,
     pub results: Vec<Video>,
     }
 
 // Query Params
-#derive(Deserialize)]
+#[derive(Deserialize)]
 pub struct PageQuery {
     pub page: Option<i32>,
 }
