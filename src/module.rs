@@ -11,5 +11,13 @@ pub struct Movie {
     pub release_date: Option<String>,
     pub media_type: Option<String>,
 
+    }
+
+#derive(Clone, Debug, Serialize, Deserialize)]
+pub struct TdmbResponse {
+    pub page: i32,
+    pub results: Vec<Movie>,
+    pub total_pages: i32,
 
     }
+
