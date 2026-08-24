@@ -32,3 +32,8 @@ pub struct Video {
 
     }
 
+#derive(Clone, Debug, Serialize, Deserialize)]
+pub struct VideoResponse {
+    pub id: i32,
+    pub results: Vec<Video>,
+    }
