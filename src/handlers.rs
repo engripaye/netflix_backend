@@ -11,4 +11,5 @@ pub async fn get_trending_movies(
     Query(query): Query<PageQuery>,
     ) -> Json<TdmbResponse> {
     let page = query.page.unwrap_or(1);
+    let url = format!(
 
