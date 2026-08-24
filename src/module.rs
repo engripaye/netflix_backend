@@ -43,3 +43,9 @@ pub struct VideoResponse {
 pub struct PageQuery {
     pub page: Option<i32>,
 }
+
+#[derive(Deserialize)]
+pub struct SearchQuery {
+    pub query: String,
+    pub page: Option<i32>,
+    }
