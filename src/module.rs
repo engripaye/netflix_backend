@@ -21,3 +21,14 @@ pub struct TdmbResponse {
 
     }
 
+#derive(Clone, Debug, Serialize, Deserialize)]
+pub struct Video {
+    pub id: String,
+    pub key: String,
+    pub site: String,
+    pub r#type: String,
+    pub name: String,
+
+
+    }
+
