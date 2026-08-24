@@ -37,3 +37,9 @@ pub struct VideoResponse {
     pub id: i32,
     pub results: Vec<Video>,
     }
+
+// Query Params
+#derive(Deserialize)]
+pub struct PageQuery {
+    pub page: Option<i32>,
+}
